@@ -1,0 +1,165 @@
+/* style.css */
+
+/* Incluye los iconos de Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* General */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1e;
+    color: #f5f5f7;
+}
+
+/* Header */
+header {
+    background-color: #f0bde6;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation */
+nav {
+    background-color: #2c2c2e;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #f5f5f7;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 8px;
+}
+
+nav a:hover {
+    background-color: #430f33;
+    color: white;
+    border-radius: 5px;
+}
+
+nav div {
+    position: relative;
+}
+
+nav div ul {
+    display: none;
+    position: absolute;
+    background-color: #2c2c2e;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+nav div:hover ul {
+    display: block;
+}
+
+nav div ul li {
+    padding: 10px;
+}
+
+nav div ul li a {
+    color: #f5f5f7;
+}
+
+nav div ul li a:hover {
+    background-color: #7d3a6a;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Main Section */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #2c2c2e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    text-align: center;
+    color: #c38cca;
+    font-family: 'Arial', sans-serif;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #f5f5f7;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #3a3a3c;
+    border-radius: 6px;
+    background-color: #1c1c1e;
+    color: white;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form button[type="submit"] {
+    background-color: #c7679f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #872658;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
